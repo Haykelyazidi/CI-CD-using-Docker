@@ -1,6 +1,8 @@
 FROM tomcat:latest
 
-LABEL maintainer="Nidhi Gupta"
+LABEL maintainer="haykel test"
+
+RUN cp -R  /usr/local/tomcat/webapps.dist/*  /usr/local/tomcat/webapps
 
 ADD ./target/LoginWebApp-1.war /usr/local/tomcat/webapps/
 
